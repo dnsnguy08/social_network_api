@@ -13,5 +13,19 @@ mongoose.connect('mongodb+srv://dennis:4pbPg9c0BgOGwtz6@cluster0.hc8bssf.mongodb
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
+app.post('/api/users', async(req, res) => {
+  try {
+    const newUser = await newUser.create({
+      username: req.body.username,
+      email: req.body.email,
+      username: req.body.username,
+      username: req.body.username,
+      username: req.body.username,
+
+    })
+  } catch (error) {
+    res.status(500).json({error});
+  }
+});
 
 app.listen(PORT, () => console.log('server started successfully!'));
