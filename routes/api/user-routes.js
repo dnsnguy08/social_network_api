@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { User } = require("../../models")
 
-// ROUTE THAT GETS ALL THE USERS, include friends?
+// ROUTE THAT GETS ALL THE USERS
 router.get('/', async (req, res) => {
     try {
         const userData = await User.find();
@@ -37,8 +37,8 @@ router.get('/:userId', async (req, res) => {
 router.put('/:userId', async (req, res) => {
     try {
         const userData = await User.findOneAndUpdate(
-            { $set: req.body },
             { _id: req.params.userId },
+            { $set: req.body },
             { new: true }
         );
         res.json(userData);

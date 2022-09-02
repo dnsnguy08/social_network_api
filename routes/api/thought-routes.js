@@ -83,7 +83,7 @@ router.post('/:thoughtId/reactions', async (req, res) => {
 // ROUTE TO DELETE A REACTION ON A THOUGHT
 router.delete('/:thoughtId/reactions/:reactionId', async (req, res) => {
     try {
-        let thought = await Thought.findOneAndUpdate(
+        await Thought.findOneAndUpdate(
             { _id: req.params.thoughtId },
             { $pull: { reactions: req.params.reactionId } },
         )
