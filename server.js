@@ -1,25 +1,16 @@
 const express = require('express');
-const mongoose = require('mongoose');
+const db = require('./config/connection');
+const routes = require('./routes');
 
-const app = express();
 const PORT = process.env.PORT || 3001;
+const app = express();
 
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.urlencoded({extended: true}));
+app.use(routes);
 
-app.post('/api/users', async(req, res) => {
-  try {
-    const newUser = await newUser.create({
-      username: req.body.username,
-      email: req.body.email,
-      username: req.body.username,
-      username: req.body.username,
-      username: req.body.username,
-
-    })
-  } catch (error) {
-    res.status(500).json({error});
-  }
+db.once('open', () => {
+  app.listen(PORT, () => {
+    console.log(`Server successfully running on port ${PORT}!`);
+  });
 });
-
-app.listen(PORT, () => console.log('server started successfully!'));
