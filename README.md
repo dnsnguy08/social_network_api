@@ -15,9 +15,7 @@
   - [Repository Link](#repository)
   - [Questions](#questions)
   
-  ![ecommerce_gif1](./Assets/13-orm-homework-demo-01.gif)
-  ![ecommerce_gif2](./Assets/13-orm-homework-demo-02.gif)
-  ![ecommerce_gif3](./Assets/13-orm-homework-demo-03.gif)
+  ![backend_screenshot](./Assets/18-nosql-homework-demo-01.gif)
   
   ## Installation
 
