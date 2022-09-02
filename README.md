@@ -12,6 +12,7 @@
   - [Usage](#usage)
   - [License](#license)
   - [My Process](#my-process)
+  - [Testing](#testing)
   - [Repository Link](#repository)
   - [Questions](#questions)
   
@@ -52,7 +53,8 @@ The challenge was to build an API for a social network web application where use
 I used Express.js for routing, a MongoDB database, and the Mongoose ODM.
 Database Models <br>
 Three database models were created to to mimic a social network app's backend.
-
+## Testing
+All API routes were tested via [Insomnia](https://insomnia.rest/products/insomnia).
   ## Repository
   - [Video Walkthrough](https://drive.google.com/file/d/122zHg4QFvXtQEl6dXzm9hU3PaxpY2JvL/view?usp=sharing)
   - [Project Repo](https://github.com/dnsnguy08/social_network_api)
