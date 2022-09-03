@@ -56,7 +56,7 @@ Three database models were created to to mimic a social network app's backend.
 ## Testing
 All API routes were tested via [Insomnia](https://insomnia.rest/products/insomnia).
   ## Repository
-  - [Video Walkthrough](https://drive.google.com/file/d/122zHg4QFvXtQEl6dXzm9hU3PaxpY2JvL/view?usp=sharing)
+  - [Video Walkthrough](https://drive.google.com/file/d/1x9bsIc3JsiFA50fxj0CWI0MtpiUphUNh/view?usp=sharing)
   - [Project Repo](https://github.com/dnsnguy08/social_network_api)
   ## Questions
   For any questions, please reach out to:
